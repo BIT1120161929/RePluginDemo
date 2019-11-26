@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.myhost"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        //这个filter还挺重要
+        ndk{
+            abiFilters'armeabi-v7a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    dataBinding{
+        enabled = true
+    }
+
+//    声明libs
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+//这里需要看好是host，和plugin不一样
+apply plugin: 'replugin-host-gradle'
+
+/**
+ * 配置项均为可选配置，默认无需添加
+ * 更多可选配置项参见replugin-host-gradle的RepluginConfig类
+ * 可更改配置项参见 自动生成RePluginHostConfig.java
+ */
+repluginHostConfig {
+    /**
+     * 是否使用 AppCompat 库
+     * 不需要个性化配置时，无需添加
+     */
+    useAppCompat = true
+    /**
+     * 背景不透明的坑的数量
+     * 不需要个性化配置时，无需添加
+     */
+    /**
+    countNotTranslucentStandard = 6
+    countNotTranslucentSingleTop = 2
+    countNotTranslucentSingleTask = 3
+    countNotTranslucentSingleInstance = 2
+     */
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // support
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    /**报过java.lang.NoClassDefFoundError: Failed resolution of: Landroidx/localbroadcastmanager/content/LocalBroadcastManager;
+     * 这么一个错误，引入对应的support包就行了
+     */
+    //noinspection GradleCompatible
+//    implementation 'com.android.support:support-v4:4.4.1'
+
+    //导入host的依赖库
+    implementation ('com.qihoo360.replugin:replugin-host-lib:2.3.3')
+
+//    implementation 'commons-logging:commons-logging:1.1.2'
+//    implementation 'commons-codec:commons-codec:1.10'
+}

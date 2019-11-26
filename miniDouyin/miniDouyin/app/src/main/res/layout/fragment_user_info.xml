@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fr_ui_ci_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon"/>
+        <TextView
+            android:id="@+id/fr_ui_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fr_ui_ci_icon"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/fr_ui_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fr_ui_ci_icon"
+            android:layout_below="@id/fr_ui_tv_name"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+    <com.test.minidouyin.view.DragRecyclerView
+        android:id="@+id/fr_ui_rv_creation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"/>
+
+
+
+
+</LinearLayout>

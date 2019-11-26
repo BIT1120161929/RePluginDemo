@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.inthecheesefactory.thecheeselibrary:stated-fragment-support-v4:0.9.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/72582f6ab3707e05b456b54d9565ee98/stated-fragment-support-v4-0.9.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/72582f6ab3707e05b456b54d9565ee98/stated-fragment-support-v4-0.9.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.inthecheesefactory.thecheeselibrary/stated-fragment-support-v4/0.9.1/d66c446ef7c886ac1935ba878ca06431f9ea839f/stated-fragment-support-v4-0.9.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.inthecheesefactory.thecheeselibrary/stated-fragment-support-v4/0.9.1/d28c6cffa2193c34df7894e9ad4d09b8e464176d/stated-fragment-support-v4-0.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

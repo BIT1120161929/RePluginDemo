@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiniDouyin</string>
+    <string name="BTN_POST">POST</string>
+    <string name="BTN_FACING">FACING</string>
+    <string name="BTN_RECORD">RECORD</string>
+    <string name="USER_TV_NAME">name</string>
+    <string name="USER_TV_DESCRIPTION">description</string>
+</resources>
