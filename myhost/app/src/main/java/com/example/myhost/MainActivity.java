@@ -40,33 +40,30 @@ public class MainActivity extends AppCompatActivity {
          * 该插件以jar包的形式存放在main/assets/plugins文件夹下，展示的是利用  包名  来打开对应的Activity
          * 这块的包名，就是plugin的包名，可以去plugin的module下的gradle文件中查看applicationId属性。
          */
-        binding.btnPlugin.setOnClickListener(view->{
-            RePlugin.startActivity(this,RePlugin.createIntent("plugin","com.example.myplugin.MainActivity"));
-        });
+        binding.btnPlugin.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("plugin","com.example.myplugin.MainActivity")));
         /**
          * 通过别名打开插件，其实就是jar包的名字。
          * 发现一个和tricky的地方，就是如果使用同一份插件但是改了一个别名的话是打不开的。
          */
-        binding.btnAlias.setOnClickListener(view->{
-            RePlugin.startActivity(this,RePlugin.createIntent("plugin2","com.example.myplugin2.MainActivity"));
-        });
+        binding.btnAlias.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("plugin2","com.example.myplugin2.MainActivity")));
 
         /**
          * 目前还打不开，估计是因为这个插件中的Context的问题，需要判断是否获取本插件的Context。目前只是一个猜测，还需要继续验证。已经解决！！
          * 不是因为context的问题，虽然context也是一个坑。是因为RePlugin的问题，会导致部分继承自androidx的AppCompatActivity不会替换成功，需要手动替换所有的AppCompatActivity。
          * 权限问题需要拉到宿主app中。
          */
-        binding.btnDouyin.setOnClickListener(view->{
-            RePlugin.startActivity(this,RePlugin.createIntent("douyin","com.test.minidouyin.activity.MainActivity"));
-        });
+        binding.btnDouyin.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("douyin","com.test.minidouyin.activity.MainActivity")));
 
         /**
          * 尝试打开官方的demo
          * 打得开……
          */
-        binding.btnDemo.setOnClickListener(view->{
-            RePlugin.startActivity(this,RePlugin.createIntent("demo","com.qihoo360.replugin.sample.demo1.MainActivity"));
-        });
+        binding.btnDemo.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("demo","com.qihoo360.replugin.sample.demo1.MainActivity")));
+
+        /**
+         * 模拟下载安装外置插件，利用的是重写RePluginCallbacks中的onPluginNotExistsForActivity方法
+         */
+        binding.btnInstall.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("demo3","com.qihoo360.replugin.sample.demo3.MainActivity")));
 
         /**
          * 显示已安装插件信息

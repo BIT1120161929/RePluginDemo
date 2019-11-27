@@ -2,8 +2,10 @@ package com.example.myhost.application;
 
 import android.content.Context;
 
+import com.example.myhost.callbacks.MyTestCallBack;
 import com.qihoo360.replugin.RePlugin;
 import com.qihoo360.replugin.RePluginApplication;
+import com.qihoo360.replugin.RePluginCallbacks;
 import com.qihoo360.replugin.RePluginConfig;
 
 /**
@@ -33,5 +35,20 @@ public class MyHostApplication extends RePluginApplication {
                         .setUseHostClassIfNotFound(true)
                         //在插件安装时，是否将文件移动到app_p_a目录下，默认为true
                         .setMoveFileWhenInstalling(false));
+    }
+
+    /**
+     * 关于config和Callback的自定义设置看以下的文档
+     * https://github.com/Qihoo360/RePlugin/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89RePlugin
+     * @return
+     */
+    @Override
+    protected RePluginConfig createConfig() {
+        return super.createConfig();
+    }
+
+    @Override
+    protected RePluginCallbacks createCallbacks() {
+        return new MyTestCallBack(getApplicationContext());
     }
 }
