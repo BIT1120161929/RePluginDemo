@@ -1,10 +1,14 @@
 package com.example.myhost;
 
 import android.Manifest;
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProvider;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +24,7 @@ import com.qihoo360.replugin.model.PluginInfo;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private InfoViewModel model;
 
     public static final int REQUEST_PERMISSIONS = 123;
     public String[] permissionArray = new String[]{
@@ -74,9 +79,15 @@ public class MainActivity extends AppCompatActivity {
                 result+=info;
                 result+="\n";
             }
-            binding.tvInfo.setText(result);
+            model.getCurrentInfo().setValue(result);
         });
 
+        model = ViewModelProviders.of(this).get(InfoViewModel.class);
+        final Observer<String> infoObserver = info->{
+            binding.tvInfo.setText(info);
+        };
+
+        model.getCurrentInfo().observe(this,infoObserver);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
