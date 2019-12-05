@@ -1,6 +1,5 @@
 package com.example.myhost;
 
-import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
 /**
@@ -8,11 +7,11 @@ import android.arch.lifecycle.ViewModel;
  */
 public class InfoViewModel extends ViewModel {
 
-    private MutableLiveData<String> currentInfo;
+    private MyLiveData<String> currentInfo;
 
-    public MutableLiveData<String> getCurrentInfo() {
+    public MyLiveData<String> getCurrentInfo() {
         if(currentInfo==null){
-            currentInfo = new MutableLiveData<>();
+            currentInfo = new MyLiveData<>();
         }
         return currentInfo;
     }

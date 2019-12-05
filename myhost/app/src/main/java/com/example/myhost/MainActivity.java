@@ -2,13 +2,11 @@ package com.example.myhost;
 
 import android.Manifest;
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -74,18 +72,16 @@ public class MainActivity extends AppCompatActivity {
          * 显示已安装插件信息
          */
         binding.btnGetInfo.setOnClickListener(view->{
-            String result = new String();
+            StringBuilder result = new StringBuilder();
             for (PluginInfo info : RePlugin.getPluginInfoList()) {
-                result+=info;
-                result+="\n";
+                result.append(info);
+                result.append("\n");
             }
-            model.getCurrentInfo().setValue(result);
+            model.getCurrentInfo().setValue(result.toString());
         });
 
         model = ViewModelProviders.of(this).get(InfoViewModel.class);
-        final Observer<String> infoObserver = info->{
-            binding.tvInfo.setText(info);
-        };
+        final Observer<String> infoObserver = info-> binding.tvInfo.setText(info);
 
         model.getCurrentInfo().observe(this,infoObserver);
     }
