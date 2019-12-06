@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
          * 该插件以jar包的形式存放在main/assets/plugins文件夹下，展示的是利用  包名  来打开对应的Activity
          * 这块的包名，就是plugin的包名，可以去plugin的module下的gradle文件中查看applicationId属性。
          */
-        binding.btnPlugin.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("plugin","com.example.myplugin.MainActivity")));
+        binding.btnPlugin.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("com.example.myplugin","com.example.myplugin.MainActivity")));
         /**
          * 通过别名打开插件，其实就是jar包的名字。
          * 发现一个和tricky的地方，就是如果使用同一份插件但是改了一个别名的话是打不开的。

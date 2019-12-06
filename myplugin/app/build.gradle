@@ -20,10 +20,18 @@ android {
         enabled = true
 
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 //这块就是plugin
 apply plugin: 'replugin-plugin-gradle'
-
+repluginPluginConfig {
+    pluginName = "plugin"
+    hostApplicationId = "com.example.myhost"
+    hostAppLauncherActivity = "com.example.myhost.MainActivity"
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -37,4 +45,6 @@ dependencies {
 
     //导入plugin的依赖库
     implementation 'com.qihoo360.replugin:replugin-plugin-lib:2.3.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

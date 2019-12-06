@@ -6,24 +6,77 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MyLive" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9984bcf0-fd73-4c44-835d-ff0d6abf30e5" name="Default Changelist" comment="尝试了Extend LiveData">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myhost/MyLiveData.java" afterDir="false" />
+    <list default="true" id="9984bcf0-fd73-4c44-835d-ff0d6abf30e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../myplugin/app/src/main/java/com/example/myplugin/TestActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin/app/src/main/res/layout/activity_test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__android_android_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_databinding_databinding_adapters_3_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_databinding_databinding_common_3_2_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_databinding_databinding_runtime_3_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_test_core_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__com_qihoo360_replugin_replugin_plugin_lib_2_3_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myplugin2/myplugin2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myhost/InfoViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myhost/InfoViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/plugins/plugin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/plugins/plugin.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myplugin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myplugin/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myplugin/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../myplugin/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myplugin/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myplugin/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myplugin/app/src/main/java/com/example/myplugin/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myplugin/app/src/main/java/com/example/myplugin/MainActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/application/MyHostApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -90,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="855">
+              <caret line="45" column="123" selection-start-line="45" selection-start-column="123" selection-end-line="45" selection-end-column="123" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,71 +152,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/InfoViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/MyLiveData.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/callbacks/MyTestCallBack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-551">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="285">
               <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+            <state relative-caret-position="95">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
     </leaf>
@@ -208,23 +221,22 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myhost/MyLiveData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myhost/InfoViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1911" />
-    <option name="y" value="-9" />
-    <option name="width" value="2578" />
-    <option name="height" value="1408" />
+    <option name="x" value="82" />
+    <option name="y" value="-11" />
+    <option name="width" value="1848" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -245,12 +257,38 @@
             </path>
             <path>
               <item name="myhost" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="myhost" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhost" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="myhost" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="callbacks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhost" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="myhost" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="plugins" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myhost" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -275,21 +313,6 @@
               <item name="myhost" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="bakApk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myhost" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myhost" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="bakApk" type="462c0819:PsiDirectoryNode" />
-              <item name="app-1203-19-41-24" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myhost" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myhost" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,7 +321,7 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="patch" type="462c0819:PsiDirectoryNode" />
+              <item name="apk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myhost" type="b2602c69:ProjectViewProjectNode" />
@@ -306,7 +329,7 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="patch" type="462c0819:PsiDirectoryNode" />
+              <item name="apk" type="462c0819:PsiDirectoryNode" />
               <item name="release" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -320,7 +343,7 @@
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV2" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/external" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/plugins" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -333,6 +356,7 @@
       <recent name="com.example.myhost.callbacks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\android\RePlugin\MyReplugin\RePluginDemo_git\RePluginDemo\myhost\app\src\main\assets\plugins" />
       <recent name="D:\android\RePlugin\MyReplugin\RePluginDemo_git\RePluginDemo\myhost\app\src\main\assets\external" />
       <recent name="D:\android\RePlugin\MyReplugin\RePluginDemo\myhost\app\src\main\assets\plugins" />
       <recent name="D:\android\RePlugin\MyReplugin\RePluginDemo\myhost\app\libs" />
@@ -444,14 +468,22 @@
       <option name="project" value="LOCAL" />
       <updated>1575456626515</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="尝试了Extend LiveData">
+      <created>1575510433176</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575510433176</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="55" y="-7" width="1232" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16167665" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27597955" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -459,23 +491,23 @@
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3279678" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32669982" />
       <window_info anchor="bottom" id="Gerrit" order="1" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="2" visible="true" weight="0.5251509" />
+      <window_info anchor="bottom" id="Logcat" order="2" weight="0.5240464" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" />
       <window_info anchor="bottom" id="Terminal" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500499" side_tool="true" weight="0.3279678" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.32997987" />
+      <window_info active="true" anchor="bottom" id="Build" order="9" visible="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.3279678" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.499501" weight="0.3279678" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.499501" visible="true" weight="0.3279678" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.2729541" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.2725724" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
@@ -651,50 +683,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/release/app-release.apk" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/callbacks/MyTestCallBack.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/application/MyHostApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -716,28 +708,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/MyLiveData.java">
+    <entry file="file://$PROJECT_DIR$/app/build/outputs/apk/release/app-release.apk">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/MyLiveData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="266">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -748,6 +741,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/callbacks/MyTestCallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="123" selection-start-line="45" selection-start-column="123" selection-end-line="45" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myhost/application/MyHostApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
