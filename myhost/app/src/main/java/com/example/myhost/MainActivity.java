@@ -15,6 +15,9 @@ import com.example.myhost.databinding.ActivityMainBinding;
 import com.qihoo360.replugin.RePlugin;
 import com.qihoo360.replugin.model.PluginInfo;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 /**
  * 目前有一个问题需要解决，就是打开插件Activity之后，Activity页面会变小。目前不知道是什么原因。
  * 已经解决，是因为使用了androidx的原因，将sdk版本调整为28，并且所有的support库都调整为对应版本即可。
@@ -78,6 +81,39 @@ public class MainActivity extends AppCompatActivity {
                 result.append("\n");
             }
             model.getCurrentInfo().setValue(result.toString());
+        });
+
+        /**
+         * 使用插件中的类
+         */
+        binding.btnUsePluginClass.setOnClickListener(view->{
+            //获取插件的ClassLoader
+            ClassLoader pluginClassLoader = RePlugin.fetchClassLoader("com.example.myplugin");
+            try {
+                //加载对应的类
+                Class pluginClass = pluginClassLoader.loadClass("com.example.myplugin.TestPluginClass");
+                Object pluginTestInstance = pluginClass.newInstance();
+                Method getName = pluginClass.getDeclaredMethod("getName");
+                Method getVersion = pluginClass.getDeclaredMethod("getVersion");
+                Method setName = pluginClass.getDeclaredMethod("setName",String.class);
+                Method setVersion = pluginClass.getDeclaredMethod("setVersion",Integer.class);
+
+                setName.invoke(pluginTestInstance,"testName");
+                setVersion.invoke(pluginTestInstance,1231231);
+
+                model.getCurrentInfo().setValue(getName.invoke(pluginTestInstance)+"   "+getVersion.invoke(pluginTestInstance));
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            }
+
         });
 
         model = ViewModelProviders.of(this).get(InfoViewModel.class);
