@@ -48,6 +48,12 @@
                 android:layout_height="wrap_content"
                 android:text="install" />
 
+            <Button
+                android:id="@+id/btn_view_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ViewModelActivity" />
+
 
             <Button
                 android:id="@+id/btn_getInfo"

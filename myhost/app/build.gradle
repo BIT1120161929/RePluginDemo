@@ -9,8 +9,8 @@ android {
         versionCode 1
         versionName "1.0"
         //这个filter还挺重要
-        ndk{
-            abiFilters'armeabi-v7a'
+        ndk {
+            abiFilters 'armeabi-v7a'
         }
     }
     buildTypes {
@@ -23,7 +23,7 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 
@@ -54,10 +54,10 @@ repluginHostConfig {
      * 不需要个性化配置时，无需添加
      */
     /**
-    countNotTranslucentStandard = 6
-    countNotTranslucentSingleTop = 2
-    countNotTranslucentSingleTask = 3
-    countNotTranslucentSingleInstance = 2
+     countNotTranslucentStandard = 6
+     countNotTranslucentSingleTop = 2
+     countNotTranslucentSingleTask = 3
+     countNotTranslucentSingleInstance = 2
      */
 }
 
@@ -74,7 +74,7 @@ dependencies {
 //    implementation 'com.android.support:support-v4:4.4.1'
 
     //导入host的依赖库
-    implementation ('com.qihoo360.replugin:replugin-host-lib:2.3.3')
+    implementation('com.qihoo360.replugin:replugin-host-lib:2.3.3')
 
 //    implementation 'commons-logging:commons-logging:1.1.2'
 //    implementation 'commons-codec:commons-codec:1.10'
@@ -85,4 +85,5 @@ dependencies {
     implementation "android.arch.lifecycle:viewmodel:1.1.1"
 // alternatively, just LiveData
     implementation "android.arch.lifecycle:livedata:1.1.1"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

@@ -3,6 +3,7 @@ package com.example.myhost;
 import android.Manifest;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.databinding.DataBindingUtil;
 import android.os.Build;
@@ -42,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
         getPermission();
 
+        //of使得ViewModel在Activity之内有效
+        model = ViewModelProviders.of(this).get(InfoViewModel.class);
+        //初始化Observer，也就是LiveData发生变化后的操作
+        final Observer<String> infoObserver = info-> binding.tvInfo.setText(info);
+        //设置Observer为LiveData的observer
+        model.getCurrentInfo().observe(this,infoObserver);
+
         /**
          * 该插件以jar包的形式存放在main/assets/plugins文件夹下，展示的是利用  包名  来打开对应的Activity
          * 这块的包名，就是plugin的包名，可以去plugin的module下的gradle文件中查看applicationId属性。
@@ -70,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
          * 模拟下载安装外置插件，利用的是重写RePluginCallbacks中的onPluginNotExistsForActivity方法
          */
         binding.btnInstall.setOnClickListener(view-> RePlugin.startActivity(this,RePlugin.createIntent("demo3","com.qihoo360.replugin.sample.demo3.MainActivity")));
+
+        binding.btnViewModel.setOnClickListener(view->{
+            Intent intent = new Intent(MainActivity.this, ViewModelActivity.class);
+            startActivity(intent);
+        });
 
         /**
          * 显示已安装插件信息
@@ -115,11 +128,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-        model = ViewModelProviders.of(this).get(InfoViewModel.class);
-        final Observer<String> infoObserver = info-> binding.tvInfo.setText(info);
-
-        model.getCurrentInfo().observe(this,infoObserver);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
