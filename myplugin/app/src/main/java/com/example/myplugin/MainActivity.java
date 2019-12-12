@@ -86,13 +86,18 @@ public class MainActivity extends AppCompatActivity {
                     });
                     break;
                 case 1:
+                    /**
+                     * 点击按钮将标题替换为宿主工程中的对应类。使用反射实现。
+                     */
                     ((TextRecyclerView) (holder.itemView)).setText("使用宿主的类");
                     ((TextRecyclerView) (holder.itemView)).seButton("使用并替换标题");
                     ((TextRecyclerView) (holder.itemView)).binding.btnFunction.setOnClickListener(view->{
+                        //获得宿主的ClassLoader
                         ClassLoader hostClassLoader = RePlugin.getHostClassLoader();
                         ((TextRecyclerView) (holder.itemView)).seButton("点击了按钮");
                         try {
                             if(hostClassLoader!=null){
+                                //需要加载的宿主类
                                 Class hostTestClass = hostClassLoader.loadClass("com.example.myhost.TestClass");
                                 Object testClass = hostTestClass.newInstance();
                                 Method getName = hostTestClass.getDeclaredMethod("getName");
